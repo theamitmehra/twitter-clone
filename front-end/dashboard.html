@@ -1,0 +1,311 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Twittter clone design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="shloch-bella" content="Twitter">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class='container'>
+    <div class='row'>
+
+      <!--Left Menu block-->
+      <div class='col-lg-3 col-md-1 col-2'>
+
+        <nav>
+          <a href="#"><i class="fab fa-twitter fa-2x" style="padding-left: 180px;"></i></a>
+
+          <ul class="nav flex-column" style="padding-left: 150px;">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fas fa-house-damage"></i> <span
+                  class="menu-text">Home</span></a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> <i class="fab fa-slack-hash"></i> <span class="menu-text">Explore</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-bell"></i> <span class="menu-text">Notifications</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-envelope"></i> <span class="menu-text">Messages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-bookmark"></i> <span class="menu-text">Bookmarks</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-list-alt"></i> <span class="menu-text">Lists</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-user-circle"></i> <span class="menu-text">Profile</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-ellipsis-h"></i> <span class="menu-text">More</span></a>
+            </li>
+            <li class="nav-item mobile-post">
+              <a class="nav-link2" href="#"><i class="far fa-edit"></i></a>
+            </li>
+          </ul>
+
+
+          <button type="button" class="btn btn-primary btn-sm tweeterBtn" style="position: relative; left: 150px; padding-left: -10px; padding-right: -10px;">Tweet</button>
+        </nav>
+
+
+      </div>
+
+      <!--middle block-->
+      <div class='col-lg-6 col-md-11 col-10'>
+        <main>
+
+          <div class="first-part">
+            <div><a class="home">Home</a></div>
+            <div><i class="far fa-star"></i></div>
+          </div>
+          <div class="whats-happening">
+            <form>
+              <div class="post-blocks">
+                <!-- <div class="post-profile"><img src="profile.jpg" class="avatar" alt="Avatar" style="box-shadow: rgb(255 255 255 / 3%) 0px 0px 2px inset;"></div> -->
+                <img src="images/profile.jpg" alt="" style="max-width: 9%; max-height: 9%; border-radius: 50%; margin: 0.8rem;" >
+                <textarea class="post-form" placeholder="What's happening"></textarea>
+              </div>
+              <div class="post-icons">
+                <div class="first-post-icons">
+                  <i class="fas fa-image"></i>
+                  <i class="fas-fa-poll"></i>
+                  <i class="fas fa-emoji"></i>
+                  <i class="fas fa-smile"></i>
+                </div>
+                <div class="second-post-icons">
+                  <i class="far fa-circle"></i>
+                  <i class="fas fa-plus-circle"></i>
+                  <button type="button" class="btn btn-primary btn-sm tweeterBtn">Tweet</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </main>
+
+        <!--TWEEEEEETS-->
+        <section id="tweets">
+          <!--1 tweet-->
+          <div class="tweet-1">
+            <div class="tweet-img">
+              <img src="images/twitter.jpg" alt="" style="max-width: 50%; padding: 0.2rem; border-radius: 50%;">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong>Twitter</strong>
+                <span class="twitter-account"> @Twitter</span> 
+                <span class="date"></span>
+              </div>
+              <div class="message">
+                if you can dream it, tweet it.
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!--1 tweet-->
+          <div class="tweet-1">
+            <div class="tweet-img">
+                <img src="images/elonmusk.jpg" alt="" style="max-width: 50%; padding: 0.2rem; border-radius: 50%;">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong> Elon Musk</strong>
+                <span class="twitter-account"> @elonmusk</span> 
+                <span class="date">.5min</span>
+              </div>
+              <div class="message">
+                I dunno … seems kinda fungible
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+                
+              </div>
+            </div>
+          </div>
+          <!--1 tweet-->
+          <div class="tweet-1">
+            <div class="tweet-img">
+                <img src="images/bnb.jpg" alt="" style="max-width: 50%; padding: 0.2rem; border-radius: 50%;">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong> Binance</strong>
+                <span class="twitter-account"> @Binance</span> 
+                <span class="date">.5min</span>
+              </div>
+              <div class="message">
+                see you in the metaverse.
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+                
+              </div>
+            </div>
+          </div>
+          <!--1 tweet-->
+          <div class="tweet-1">
+            <div class="tweet-img">
+                <img src="images/elonmusk.jpg" alt="" style="max-width: 50%; padding: 0.2rem; border-radius: 50%;">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong>Elon musk</strong>
+                <span class="twitter-account"> @elonmusk</span> 
+                <span class="date">.10min</span>
+              </div>
+              <div class="message">
+                Tesla's 2022 Annual Shareholder Meeting will be on August 4th in Austin, TX. Thank you for your support of Tesla!
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+                
+              </div>
+            </div>
+          </div>
+          <!--1 tweet-->
+          <div class="tweet-1">
+            <div class="tweet-img">
+                <img src="images/profile.jpg" alt="" style="max-width: 50%; padding: 0.2rem; border-radius: 50%;">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong> Amit mehra</strong>
+                <span class="twitter-account"> @theamitmehraaa</span> 
+                <span class="date">.5min</span>
+              </div>
+              <div class="message">
+                The Weeknd is the best performer of our generation
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+                
+              </div>
+            </div>
+          </div>
+          
+          <!--1 tweet-->
+          
+          <div class="tweet-1">
+            <div class="tweet-img">
+                <img src="images/deep.jpg" alt="" style="max-width: 50%; padding: 0.2rem; border-radius: 50%;">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong>Deep</strong>
+                <span class="twitter-account"> @deeptxtmsgs</span> 
+                <span class="date">.5min</span>
+              </div>
+              <div class="message">
+                you call it music, i call it therapy.
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+                
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+      </div>
+
+      <!--Right  block-->
+      <div class='col-lg-3 d-none d-lg-block' id="rightBlock">
+        <!--search-->
+        <div class="search">
+          <form>
+            <input type="search" placeholder="search twitter" results />
+          </form>
+        </div><br />
+        <!--proposed profiles-->
+        <div class="other-profiles" style="border-radius: 10px;">
+          <div class="heading">
+            <h5>Who to follow</h5>
+          </div>
+          <div class="profile-1">
+            <div class="profile-img"><img src="images/parag.jpg" class="avatar" alt=""  style="max-width: 50%; border-radius: 50%;"></div>
+            <div class="profile-name">
+              parag aggarwal <br />
+              <span class="twitter-account">@paraga</span>
+            </div>
+            <div class="follow-btn"><button>Follow</button></div>
+          </div>
+          <div class="profile-1">
+            <div class="profile-img"><img src="images/rcb.jpg" class="avatar" alt=""  style="max-width: 50%; border-radius: 50%;"></div>
+            <div class="profile-name">
+              royal challenger banglore <br />
+              <span class="twitter-account">@rcbtweets</span>
+            </div>
+            <div class="follow-btn"><button>Follow</button></div>
+          </div>
+          <div class="profile-1">
+            <div class="profile-img"><img src="images/elonmusk.jpg" class="avatar" alt="" style="max-width: 50%; border-radius: 50%;"></div>
+            <div class="profile-name">
+              elon musk<br />
+              <span class="twitter-account">@elonmusk</span>
+            </div>
+            <div class="follow-btn"><button>Follow</button></div>
+          </div>
+          <div class="heading">
+            <a href="#">Show more</a>
+          </div>
+        </div><br />
+
+        <div id="policy">
+          <span><strong>Design:</strong>
+            <a href="https://twitter.com/Theamitmehraaa">@theamitmehraaa</a>
+          </span><br />
+          
+        </div><br />
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
